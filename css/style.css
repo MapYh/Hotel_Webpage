@@ -1,0 +1,256 @@
+
+/*----------General styles------------*/
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0 auto;
+  max-width: 125rem;
+}
+
+.body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  min-width: 20rem;
+} 
+ 
+/*----------Header section------------*/
+
+.header {
+  background-color: #1f1f22;
+  color: #fff;
+  padding: 1.25rem;
+}
+
+.header__img--styling {
+  padding: 1.25rem; 
+
+}
+
+.header-logo__size{
+  max-width: 10rem;
+}
+
+.header__nav--styling{
+  padding-left: 1.563rem;
+}
+
+.header__list--styling {
+  list-style-type: none;
+}
+ 
+.header__list__list-item--styling {
+  display: inline;
+  margin-right: 10px;
+}
+ 
+.header__list__link--styling {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+/*--------About/Search section---------*/
+
+.aboutpage--styling{
+  padding: 1.25rem;
+}
+
+.about__img--styling{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  margin-bottom: 3rem;
+}
+
+.bookpage-img{
+  padding: 1.25rem;
+}
+
+.bookpage-img__img--styling{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  margin-bottom: 3rem;
+}
+
+.search-list--styling{
+  list-style-type: none; /*Tar bort prickarna från form elementen*/ 
+}
+
+.search__list-item{/*Placerar form elementen horisontellt*/
+  display: inline-block;
+  width: 100%/4;
+}
+
+.search--styling{
+  padding: 1.25rem;
+}
+
+/*----------Rooms section------------*/
+
+.rooms{
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 2rem;
+
+}
+
+.rooms-page--styling{
+  padding: 1.25rem;
+}
+
+.rooms__room{
+  grid-column: auto / span 3;
+  width: 100%;
+  gap: 1rem; 
+}
+
+.rooms__room--margin-bottom {
+  margin-bottom: 1.25rem;
+}
+
+.rooms__img--styling{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  margin-bottom: 3rem;
+}
+
+/*----------Footer section------------*/
+
+
+.services--styling{
+  padding: 1.25rem;
+}
+
+.services__list{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  font-weight: 500;
+}
+
+.services__list-item--styling {
+  list-style-type: none;
+  display: inline;
+  margin: 2rem;
+  font-weight: 600;
+}
+
+
+/*----------Footer section------------*/
+
+.footer {
+  background-color: #1f1f22;
+  color: #fff;
+  padding: 1.25rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+/******************Home page****************/
+
+.search{  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+/*----------Images section------------*/
+
+.rooms__card{
+  width: 100%;
+  height: 100%;
+  grid-column: auto / span 3;
+  background-color: antiquewhite;
+  text-align: center;
+}
+
+/*-------------Rooms section----------*/
+
+.details{
+  grid-column: auto / span 3;
+}
+
+.details--styling{
+  padding: 1.25rem;
+}
+
+.info{
+  grid-column: auto / span 3;
+}
+
+.info--styling{
+  padding: 1.25rem;
+}
+
+.info__list {
+  word-wrap: break-word;
+  margin: 1rem;
+  list-style-type: disc;
+}
+
+.info__list-item {
+  display: block;
+  display: list-item;
+}
+
+.extra{
+  display: flex;
+  padding: 0; 
+  grid-column: auto / span 6;
+  width: 100%,
+}
+
+.extra--styling{
+  padding: 1.25rem;
+}
+
+/******************media querys****************/
+
+@media screen and (max-width: 26.25rem) {
+
+  .rooms{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: auto;
+    margin-bottom: 0;
+    gap: 0;
+  }
+  
+  .rooms--styling{
+    display: none;
+  }
+
+  .services{
+    font-size: 100%;
+    font-weight: 900;
+  }
+
+  .services ul { /*Fixa enlight bem*/
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .details{
+    display: none;
+  }
+  
+  .extra{
+    display: none;
+  }
+
+  .extra-heading{
+    display: none;
+  }
+
+}
