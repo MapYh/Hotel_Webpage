@@ -235,11 +235,11 @@
     font-weight: 900;
   }
 
-  .services ul { /*Fixa enlight bem*/
+  .services__list { 
     display: flex;
     flex-direction: column;
     text-align: center;
-  }
+  } 
 
   .details{
     display: none;
